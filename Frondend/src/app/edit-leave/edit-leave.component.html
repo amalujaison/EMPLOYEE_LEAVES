@@ -1,0 +1,44 @@
+<div class="page-container">
+    <div class="box-container">
+    <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off">
+    <table class ="table">
+        <tr>
+            <td colspan="2">
+                <p style="font-size: 40px; color: rgb(9, 9, 73); font-weight: 400;">EDIT LEAVE<p>
+            </td>
+        </tr>
+        <tr>
+            <td>NAME:</td>
+            <td><input type="text" formControlName="name" class="form-control"></td>
+        </tr>
+        <tr>
+            <td>EMAIL:</td>
+            <td><input type="text" formControlName="email"  class="form-control"></td>
+        </tr>
+        <tr>
+            <td>LEAVE REASON:</td>
+            <td><input type="text" formControlName="leaveReason"  class="form-control"></td>
+        </tr>
+        <tr>
+            <td>FROM:</td>
+            <td><input type="date" formControlName="date_from"  class="form-control"></td>
+        </tr>
+        <tr>
+            <td>TO:</td>
+            <td><input type="date" formControlName="date_to"  class="form-control"></td>
+        </tr>
+        <!-- <tr>
+            <td>STATUS:</td>
+            <td><input type="text" formControlName="status"  class="form-control"></td>
+        </tr> -->
+        <tr>
+            <td colspan="2" class="text-center">
+                <input type="submit" name="submit" value="SUBMIT" class="submit-button">
+            </td>
+            
+        </tr>
+    </table>
+</form>
+</div>
+</div>
+

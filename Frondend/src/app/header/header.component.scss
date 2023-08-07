@@ -1,0 +1,59 @@
+
+//   /* Basic styling for the header */
+header {
+    background-color: #160c53;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+  }
+  
+  /* Styling for the navigation menu */
+
+
+  nav ul {
+    list-style: none;
+    margin-left: 1200px;
+    padding: 0;
+    
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+  }
+  
+  nav li a:hover {
+    background-color: #0d0a53;
+  }
+  /* Styling for the right side elements */
+.header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right span {
+    color: #fff;
+    margin-left: 1300px;
+  }
+  
+  .header-right button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+
+
+

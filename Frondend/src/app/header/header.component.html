@@ -1,0 +1,59 @@
+<!-- <div class="header">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">Django Auth</a>
+        </div>
+        <div class="collapse.show navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a>Profile</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a>Login</a></li>
+                <li><a>Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+<header>
+    <nav >
+     
+      <ul>
+        <li style="color:aliceblue;font-size: 20px;">HOME</li>
+         <!-- <li routerLinkActive="active"><a style="cursor: pointer;" routerLink="/profile">Profile</a></li>  -->
+         <!-- <li style="font-size: 20px;color:white;">LIDEX</li> -->
+        
+        <li routerLinkActive><a style="cursor: pointer;font-size: 20px;" routerLink="/auth" *ngIf="!isAuthenticated">LOGIN</a></li>
+        
+        <li style="cursor: pointer;font-size: 20px;" *ngIf="isAuthenticated" (click)="onLogout()"><a>LOGOUT</a></li>
+      </ul>
+    
+    
+   
+</nav>
+     
+  </header>
+  
+
+
+
+
+
+
+
+  <!-- <div class="login-container" id="login">
+    <div class="top">
+        <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+        <header>Login</header>
+    </div>
+    <div class="input-box">
+        <input type="text" class="input-field" placeholder="Username or Email">
+        <i class="bx bx-user"></i>
+    </div>
+    <div class="input-box">
+        <input type="password" class="input-field" placeholder="Password">
+        <i class="bx bx-lock-alt"></i>
+    </div>
+    <div class="input-box">
+        <input type="submit" class="submit" value="Sign In">
+    </div>
+</div> -->

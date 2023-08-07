@@ -1,0 +1,64 @@
+<div class="page-container">
+    <div class="box-container">
+    <table class ="table">
+        <thead>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>REASON</th>
+            <th>FROM</th>
+            <th>TO</th>
+            <th>STATUS</th>
+            <!-- <th>DELETE</th>
+            <th>EDIT</th> -->
+           
+        </thead>
+        <tbody>
+            <tr *ngFor="let lv of leave">
+                <td>{{lv.name}}</td>
+                <td>{{lv.email}}</td>
+                <td>{{lv.leaveReason}}</td>
+                <td>{{lv.date_from}}</td>
+                <td>{{lv.date_to}}</td>
+                <!-- <td>{{lv.leaveStatus}}</td> -->
+                <!-- {% if lv.leaveStatus == True %}
+                <td style="color:green;">Approved</td>
+                {% else %}
+                    <td style="color:red;">Pending</td>
+                {% endif %} -->
+                <!-- <ng-container *ngIf="lv.leaveStatus">
+                    <td style="color:green;">Approved</td>
+                  </ng-container>
+                  <ng-container *ngIf="!lv.leaveStatus">
+                    <td style="color:red;">Rejected</td>
+                  </ng-container>
+                   -->
+                   <ng-container *ngIf="lv.leaveStatus === true">
+                    <td style="color:green;font-size: 20px; font-weight: 100%">Approved</td>
+                  </ng-container>
+                  <ng-container *ngIf="lv.leaveStatus === false">
+                    <td style="color:red; font-size: 20px; font-weight: 100%">Rejected</td>
+                  </ng-container>
+                  <ng-container *ngIf="lv.leaveStatus === null || lv.leaveStatus === undefined">
+                    <td style="color:blue; font-size: 20px; font-weight: 100%">Pending</td>
+                  </ng-container>
+                  <!-- <ng-container #pendingStatus>
+                    <td style="color:orange;">Pending</td>
+                  </ng-container> -->
+                  <!-- <ng-container *ngIf="lv.leaveStatus === true; else pendingStatus">
+                    <td style="color:green;">Approved</td>
+                  </ng-container>
+                  <ng-container *ngIf="lv.leaveStatus === false; else pendingStatus">
+                    <td style="color:red;">Rejected</td>
+                  </ng-container>
+                  <ng-template #pendingStatus>
+                    <td style="color:orange;">Pending</td>
+                  </ng-template> -->
+                <button (click)="deleteleave(lv.leaveId)" class="secondary-button">DELETE</button>
+               <button  class="primary-button"><a style="color: aliceblue;"[routerLink]="['/edit-leave/',lv.leaveId]">EDIT</a></button>
+                
+                
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</div>

@@ -1,0 +1,86 @@
+.primary-button {
+    background-color: #076820;
+    color: hsl(58, 92%, 49%); 
+    border: none;
+    padding: 12.5px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    margin-left: 20px;
+  }
+  
+  /* Secondary Button */
+  .secondary-button {
+    background-color: #cd3910; 
+    color: rgb(249, 251, 252); 
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+    margin-left: 20px;
+
+  }
+  .table td , .table th{
+
+    padding:20px;
+    border:solid black;
+    
+  }
+  .table {
+    align-items: center;
+    border-collapse: collapse; 
+    border-spacing: 10px 20px;
+  }
+  .container{
+    display: flex;
+  }
+  table{
+    width: 90%;
+    margin: auto;
+    
+}
+.btn{
+background-color: rgb(17, 6, 114);
+color: aliceblue;
+}
+.btn:hover{
+    background-color: rgb(5, 91, 15);
+    }
+.submit-button {
+    background-color: #0f054f; 
+    color: #e9f2ea;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    align: center;
+    margin-top: 70px;
+    margin-left: 100px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        margin: auto; 
+      }
+      .page-container {
+        // display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 700%;
+        background-color: #f5f3f6; 
+      }
+      
+      .box-container {
+        font-size: 20px;
+        color: #09080f;
+        padding: 120px;
+        height: 1700%;
+        background-color: #f9f8fa;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        border-radius: 8px; 
+      }
